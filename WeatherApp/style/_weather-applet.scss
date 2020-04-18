@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+.weather-applet {
+    font-family: Montserrat-Regular;
+
+    background-color: #2d3436;
+    color: white;
+
+    min-width: 160px;
+    width: max-content;
+    height: max-content;
+    
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+
+    h2 {
+        font-family: Montserrat-Bold;
+        font-size: 2rem;
+        margin: 0px;
+    }
+
+    .subHead {
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .weatherIcon {
+        color: #0984e3;
+        font-size: 1.8rem;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 0.7rem;
+        margin: 0px;
+    }
+
+    .smallTxt {
+        color: #636e72;
+        font-size: 0.6rem;
+        margin: 0px;
+    }
+}

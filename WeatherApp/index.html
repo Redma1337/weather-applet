@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app">
+        <weather-applet
+            v-if="dataReady"
+            v-for="i in dataArr"
+            v-bind:key="i.id"
+            v-bind:lat="i.lat"
+            v-bind:long="i.long"
+            v-bind:tz="i.tz"
+        >
+        </weather-applet>
+    </div>
+
+    <script type="text/javascript" src="./js/logic.js"></script>
+</body>
+
+</html>

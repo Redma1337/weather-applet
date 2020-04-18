@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("fonts/Montserrat-Regular.ttf");
+}
+
+.weather-applet {
+  font-family: Montserrat-Regular;
+  background-color: #2d3436;
+  color: white;
+  min-width: 160px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.weather-applet h2 {
+  font-family: Montserrat-Bold;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.weather-applet .subHead {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.weather-applet .weatherIcon {
+  color: #0984e3;
+  font-size: 1.8rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.weather-applet .description {
+  font-size: 0.7rem;
+  margin: 0px;
+}
+
+.weather-applet .smallTxt {
+  color: #636e72;
+  font-size: 0.6rem;
+  margin: 0px;
+}
+
+#app {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 700px) {
+  #app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
