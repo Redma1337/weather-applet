@@ -57,16 +57,16 @@ Vue.component('weather-applet', {
             <h2>{{ time.weekday_long }}</h2>
             <p class="subHead">{{ time.month_long + ", " + time.day_numeric + "th" }}</p>
             <div v-if="weather.type === 'Clouds'">
-                <p class="weatherIcon"><i class="fas fa-cloud"></i> {{ weather.temp }}</p>
+                <p class="weatherIcon"><i class="fas fa-cloud"></i> {{ weather.temp }}°</p>
             </div>
             <div v-else-if="weather.type === 'Thunderstorm'">
-                <p class="weatherIcon"><i class="fas fa-bolt"></i> {{ weather.temp }}</p>
+                <p class="weatherIcon"><i class="fas fa-bolt"></i> {{ weather.temp }}°</p>
             </div>
             <div v-else-if="weather.type === 'Rain'">
-                <p class="weatherIcon"><i class="fas fa-cloud-showers-heavy"></i> {{ weather.temp }}</p>
+                <p class="weatherIcon"><i class="fas fa-cloud-showers-heavy"></i> {{ weather.temp }}°</p>
             </div>
             <div v-else>
-                <p class="weatherIcon"><i class="far fa-sun"></i> {{ weather.temp }}</p>
+                <p class="weatherIcon"><i class="far fa-sun"></i> {{ weather.temp }}°</p>
             </div>
             <p class="description"> {{ location.city + ", " + location.country }} </p>
             <p class="smallTxt">{{ time.time_numeric }}</p>
